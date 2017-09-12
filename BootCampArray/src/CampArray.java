@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class CampArray
 	{
@@ -71,6 +72,37 @@ public static void main(String[] args)
 		
 		// challenge three
 		
+		int [] numberArray = new int [5];
+		
+		for(int i = 0 ; i < 5 ; i++){
+			
+			Random rad = new Random();
+			
+			int randomNumber = rad.nextInt(10) + 10;	
+			
+			numberArray [i] = randomNumber; 
+		}
+		
+		for(int i = 0 ; i < 5 ; i++){
+			
+			System.out.println(numberArray[i]);
+		}
+		
+		int [] backwardsNumbers = new int [5];
+		
+		for(int i = 5 ; i > 0 ; i--){
+			
+			int backwardNumber = 5 - i;
+			
+			backwardsNumbers [i - 1] = numberArray [backwardNumber];
+		}
+		
+			System.out.println("Backwards numbers:");
+			for(int i = 0 ; i < 5 ; i++){
+			
+			System.out.println(backwardsNumbers[i]);
+		}
+
 		
 	}
 
