@@ -58,17 +58,24 @@ public static void main(String[] args)
 			
 		}
 		
-		int numbersAdded = 0;
+		int evenNumbers = 0;
+		int oddNumbers = 0;
 		
 		for( int i = 0 ; i < eight ; i++){
-			int slightlyAdded = numbersAdded + eightNumbersArray [i];
 			
-			numbersAdded = slightlyAdded;
+			if(eightNumbersArray [i] % 2 == 0){
+				evenNumbers = evenNumbers + eightNumbersArray [i];
+			
+			}
+			else{
+				oddNumbers = oddNumbers + eightNumbersArray [i];
+			}
+			
 			
 		}
 		
-		System.out.println("All those numbers added together is: " + numbersAdded);
-		
+		System.out.println("All of the even numbers added together is: " + evenNumbers);
+		System.out.println("All of the odd numbers added together is: " + oddNumbers);
 		
 		// challenge three
 		
